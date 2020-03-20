@@ -6,23 +6,25 @@
     
 
     
-    <title>Hello World | 在阳光下飞翔</title>
+    <title>hexo完整搭建过程记录 | 在阳光下飞翔</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="keywords" content="" />
     
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="安装Git Bash 安装NodeJs 安装hexo 生成SSH并添加到github 部署项目 上传到github 绑定个人域名 修改及配置主题 添加RSS 添加评论 写文章部分    安装Git Bash   下载地址 安装步骤：exe文件，一路next 安装好后，工作目录右键打开gitbash，查看版本1git version    安装NodeJs   Hexo是基于nodeJS环境的静态">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://lixiaofei.online/2020/03/19/hello-world/">
+<meta property="og:title" content="hexo完整搭建过程记录">
+<meta property="og:url" content="http://lixiaofei.online/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/">
 <meta property="og:site_name" content="在阳光下飞翔">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="安装Git Bash 安装NodeJs 安装hexo 生成SSH并添加到github 部署项目 上传到github 绑定个人域名 修改及配置主题 添加RSS 添加评论 写文章部分    安装Git Bash   下载地址 安装步骤：exe文件，一路next 安装好后，工作目录右键打开gitbash，查看版本1git version    安装NodeJs   Hexo是基于nodeJS环境的静态">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-03-19T01:48:20.869Z">
-<meta property="article:modified_time" content="2020-03-19T01:48:20.869Z">
+<meta property="og:image" content="http://lixiaofei.online/.online//gitversion.png">
+<meta property="article:published_time" content="2020-03-20T08:29:36.000Z">
+<meta property="article:modified_time" content="2020-03-20T08:59:41.164Z">
 <meta property="article:author" content="XiaofeiLee">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://lixiaofei.online/.online//gitversion.png">
     
 
     
@@ -156,14 +158,14 @@
 </div>
 
                         <div class="main-body-content">
-                            <article id="post-hello-world" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-hexo完整搭建过程记录" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        Hello World
+        hexo完整搭建过程记录
         </h1>
     
 
@@ -174,8 +176,8 @@
                 
     <div class="article-date">
       <i class="fa fa-calendar"></i>
-      <a href="/2020/03/19/hello-world/" class="article-date">
-         <time datetime="2020-03-19T01:48:20.869Z" itemprop="datePublished">2020-03-19</time>
+      <a href="/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/" class="article-date">
+         <time datetime="2020-03-20T08:29:36.000Z" itemprop="datePublished">2020-03-20</time>
       </a>
     </div>
 
@@ -191,19 +193,69 @@
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+            <ol>
+<li>安装Git Bash</li>
+<li>安装NodeJs</li>
+<li>安装hexo</li>
+<li>生成SSH并添加到github</li>
+<li>部署项目</li>
+<li>上传到github</li>
+<li>绑定个人域名</li>
+<li>修改及配置主题</li>
+<li>添加RSS</li>
+<li>添加评论</li>
+<li>写文章部分</li>
+</ol>
+<hr>
+<ol>
+<li>安装Git Bash</li>
+</ol>
+<ul>
+<li><a href https: gitforwindows.org "">下载地址</a></li>
+<li>安装步骤：exe文件，一路next</li>
+<li>安装好后，工作目录右键打开gitbash，查看版本<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git version</span><br></pre></td></tr></table></figure>
+<img src="/.online//gitversion.png" alt="get version"></li>
+</ul>
+<ol start="2">
+<li>安装NodeJs </li>
+</ol>
+<p>Hexo是基于nodeJS环境的静态博客，里面的npm工具很有用啊，所以还是老老实实把这玩意儿装了吧</p>
+<p><a href https: nodejs.org en "">下载地址</a>(说明：LTS为长期支持版，Current为当前最新版)</p>
+<p>安装步骤：反正下载好msi文件后，双击打开安装，也是一路next，不过在Custom Setup这一步记得选 Add to PATH ,这样你就不用自己去配置电脑上环境变量了，装完在按 win + r 快捷键调出运行，然后输入cmd确定，在cmd中输入path可以看到你的node是否配置在里面（环境变量），没有的话你就自由发挥吧。</p>
+<p>查看版本：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<ol start="3">
+<li>安装hexo</li>
+</ol>
+<ul>
+<li>接下来都是用nodejs的npm包管理工具安装</li>
+</ul>
+<p>先创工作目录下的文件夹myblog，然后cd到该文件夹下。安装hexo命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g hexo</span><br></pre></td></tr></table></figure>
+<p>安装完成后，查看版本：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm-v</span><br></pre></td></tr></table></figure>
+<p>初始化命令：hexo init ，初始化完成之后打开所在的文件夹可以看到以下文件：</p>
+<p>myblog</p>
+<p>解释一下：<br>node_modules：是依赖包<br>public：存放的是生成的页面<br>scaffolds：命令生成文章等的模板<br>source：用命令创建的各种文章<br>themes：主题<br>_config.yml：整个博客的配置<br>db.json：source解析所得到的<br>package.json：项目所需模块项目的配置信息<br>做好这些前置工作之后接下来的就是各种配配配置了。</p>
+<ol start="4">
+<li>搭桥到github<br>没账号的创建账号，有账号的看下面。<br>创建一个repo，名称为yourname.github.io, 其中yourname是你的github名称，按照这个规则创建才有用哦，如下：<br>new-repo<br>create-repo</li>
+</ol>
+<p>回到gitbash中，配置github账户信息（YourName和YourEail都替换成你自己的）：<br>username<br>email</p>
+<p>创建SSH<br>在gitbash中输入：ssh-keygen -t rsa -C “<a href="mailto:youremail@example.com">youremail@example.com</a>，生成ssh。然后按下图的方式找到id_rsa.pub文件的内容。<br>ssh-key</p>
+<p>将上面获取的ssh放到github中：<br>settings<br>ssh-key<br>添加一个 New SSH key ，title随便取，key就填刚刚那一段。</p>
+<p>在gitbash中验证是否添加成功：ssh -T <a href="mailto:git@github.com">git@github.com</a></p>
+<p>完成下一步你就成功啦！</p>
+<ol start="5">
+<li>一步之遥<br>用编辑器打开你的blog项目，修改_config.yml文件的一些配置(冒号之后都是有一个半角空格的)：<br>deploy:<br>type: git<br>repo: <a href="https://github.com/YourgithubName/YourgithubName.github.io.git" target="_blank" rel="noopener">https://github.com/YourgithubName/YourgithubName.github.io.git</a><br>branch: master<br>回到gitbash中，进入你的blog目录，分别执行以下命令：<br>hexo clean<br>hexo generate<br>hexo server<br>注：hexo 3.0把服务器独立成个别模块，需要单独安装：npm i hexo-server。</li>
+</ol>
+<p>打开浏览器输入：<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></p>
+<p>接着你就可以遇见天使的微笑了~</p>
+<ol start="6">
+<li>上传到github<br>先安装一波：npm install hexo-deployer-git –save（这样才能将你写好的文章部署到github服务器上并让别人浏览到）<br>执行命令(建议每次都按照如下步骤部署)：<br>hexo clean<br>hexo generate<br>hexo deploy<br>注意deploy的过程中要输入你的username及passward。如下：</li>
+</ol>
+<p>deploy</p>
+<p>在浏览器中输入<a href="http://yourgithubname.github.io就可以看到你的个人博客啦，是不是很兴奋！" target="_blank" rel="noopener">http://yourgithubname.github.io就可以看到你的个人博客啦，是不是很兴奋！</a><br>感觉gitbash中东西太多的时候输入clear命令清空。<br>7. 绑定个人域名<br>不想绑定的自行忽略<br>第一步购买域名：随便在哪个网站买一个就好了，小花是在阿里云购买的visugar.com, DNS也是顺道在那买的。<br>第二步添加CNAME：在项目的source文件夹下新建一个名为CNAME的文件，在里面添加你购买的域名，比如我添加的是visugar.com，只能添加一个哦。<br>到DNS中添加一条记录：<br>dns-note<br>其中ip地址为你的github的地址，可在cmd中ping一下就能看到(ping yourname.github.io)：<br>github-ip</p>
 
         </div>
         <footer class="article-footer">
@@ -211,7 +263,7 @@
 
 
 
-    <a data-url="http://lixiaofei.online/2020/03/19/hello-world/" data-id="ck7zw86xq0000ogjrfh0g2bct" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://lixiaofei.online/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/" data-id="ck7zy93en00006cjr6zqp0fba" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -281,17 +333,42 @@
             "@type": "Person",
             "name": "XiaofeiLee"
         },
-        "headline": "Hello World",
-        "image": "http://lixiaofei.online",
+        "headline": "hexo完整搭建过程记录",
+        "image": "http://lixiaofei.online/.online//gitversion.png",
         "keywords": "",
         "genre": "",
-        "datePublished": "2020-03-19",
-        "dateCreated": "2020-03-19",
-        "dateModified": "2020-03-19",
-        "url": "http://lixiaofei.online/2020/03/19/hello-world/",
-        "description": "Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick",
-        "wordCount": 144
+        "datePublished": "2020-03-20",
+        "dateCreated": "2020-03-20",
+        "dateModified": "2020-03-20",
+        "url": "http://lixiaofei.online/2020/03/20/hexo完整搭建过程记录/",
+        "description": "
+安装Git Bash
+安装NodeJs
+安装hexo
+生成SSH并添加到github
+部署项目
+上传到github
+绑定个人域名
+修改及配置主题
+添加RSS
+添加评论
+写文章部分
+
+
+
+安装Git Bash
+
+
+下载地址
+安装步骤：exe文件，一路next
+安装好后，工作目录右键打开gitbash，查看版本1git version
+
+
+
+安装NodeJs 
+
+Hexo是基于nodeJS环境的静态",
+        "wordCount": 101
     }
 </script>
 
@@ -300,7 +377,7 @@ Quick",
     <section id="comments">
     
         
-    <div id="SOHUCS" sid="http://lixiaofei.online/2020/03/19/hello-world/"></div>
+    <div id="SOHUCS" sid="http://lixiaofei.online/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/"></div>
 
 
     
@@ -370,16 +447,12 @@ Quick",
         
 <nav id="article-nav">
     
-        <a href="/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">下一篇</strong>
-        <p class="article-nav-title">
-        
-            hexo完整搭建过程记录
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
+        <a href="/2020/03/19/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">Hello World</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
     
 </nav>
 
