@@ -12,16 +12,16 @@
     
     <meta name="keywords" content="" />
     
-    <meta name="description" content="安装Git Bash 安装NodeJs 安装hexo 生成SSH并添加到github 部署项目 上传到github 绑定个人域名 修改及配置主题 添加RSS 添加评论 写文章部分    安装Git Bash   下载地址 安装步骤：exe文件，一路next 安装好后，工作目录右键打开gitbash，查看版本1git version    安装NodeJs   Hexo是基于nodeJS环境的静态">
+    <meta name="description" content="安装Git Bash 安装NodeJs 安装hexo 生成SSH并添加到github 部署项目 上传到github 绑定个人域名    安装Git Bash   下载地址 安装步骤：exe文件，一路next 安装好后，工作目录右键打开gitbash，查看版本git version    安装NodeJs   Hexo是基于nodeJS环境的静态博客，里面的npm工具很有用啊，所以还是老老实实把这">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo完整搭建过程记录">
 <meta property="og:url" content="http://lixiaofei.online/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/">
 <meta property="og:site_name" content="在阳光下飞翔">
-<meta property="og:description" content="安装Git Bash 安装NodeJs 安装hexo 生成SSH并添加到github 部署项目 上传到github 绑定个人域名 修改及配置主题 添加RSS 添加评论 写文章部分    安装Git Bash   下载地址 安装步骤：exe文件，一路next 安装好后，工作目录右键打开gitbash，查看版本1git version    安装NodeJs   Hexo是基于nodeJS环境的静态">
+<meta property="og:description" content="安装Git Bash 安装NodeJs 安装hexo 生成SSH并添加到github 部署项目 上传到github 绑定个人域名    安装Git Bash   下载地址 安装步骤：exe文件，一路next 安装好后，工作目录右键打开gitbash，查看版本git version    安装NodeJs   Hexo是基于nodeJS环境的静态博客，里面的npm工具很有用啊，所以还是老老实实把这">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://lixiaofei.online/.online//gitversion.png">
 <meta property="article:published_time" content="2020-03-20T08:29:36.000Z">
-<meta property="article:modified_time" content="2020-03-20T08:59:41.164Z">
+<meta property="article:modified_time" content="2020-03-20T09:27:23.703Z">
 <meta property="article:author" content="XiaofeiLee">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://lixiaofei.online/.online//gitversion.png">
@@ -201,10 +201,6 @@
 <li>部署项目</li>
 <li>上传到github</li>
 <li>绑定个人域名</li>
-<li>修改及配置主题</li>
-<li>添加RSS</li>
-<li>添加评论</li>
-<li>写文章部分</li>
 </ol>
 <hr>
 <ol>
@@ -213,49 +209,86 @@
 <ul>
 <li><a href https: gitforwindows.org "">下载地址</a></li>
 <li>安装步骤：exe文件，一路next</li>
-<li>安装好后，工作目录右键打开gitbash，查看版本<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git version</span><br></pre></td></tr></table></figure>
-<img src="/.online//gitversion.png" alt="get version"></li>
+<li>安装好后，工作目录右键打开gitbash，查看版本<code>git version</code></li>
 </ul>
+<p><img src="/.online//gitversion.png" alt="get version"></p>
 <ol start="2">
 <li>安装NodeJs </li>
 </ol>
 <p>Hexo是基于nodeJS环境的静态博客，里面的npm工具很有用啊，所以还是老老实实把这玩意儿装了吧</p>
 <p><a href https: nodejs.org en "">下载地址</a>(说明：LTS为长期支持版，Current为当前最新版)</p>
-<p>安装步骤：反正下载好msi文件后，双击打开安装，也是一路next，不过在Custom Setup这一步记得选 Add to PATH ,这样你就不用自己去配置电脑上环境变量了，装完在按 win + r 快捷键调出运行，然后输入cmd确定，在cmd中输入path可以看到你的node是否配置在里面（环境变量），没有的话你就自由发挥吧。</p>
-<p>查看版本：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
-
+<p>安装步骤：反正下载好msi文件后，双击打开安装，也是一路next，不过在Custom Setup这一步记得选 Add to PATH ,这样你就不用自己去配置电脑上环境变量了，装完在按 win + r 快捷键调出运行，然后输入cmd确定，在cmd中输入path可以看到你的node是否配置在里面（环境变量），没有的话你就自由发挥吧。查看版本：<code>node -v</code></p>
+<p><img src="/.online//node-v.png" alt="node-v"></p>
 <ol start="3">
 <li>安装hexo</li>
 </ol>
 <ul>
 <li>接下来都是用nodejs的npm包管理工具安装</li>
 </ul>
-<p>先创工作目录下的文件夹myblog，然后cd到该文件夹下。安装hexo命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g hexo</span><br></pre></td></tr></table></figure>
+<p>先创工作目录下的文件夹myblog，然后cd到该文件夹下。安装hexo命令：<code>npm i -g hexo</code></p>
 <p>安装完成后，查看版本：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm-v</span><br></pre></td></tr></table></figure>
+<p><img src="/.online//hexo-v.png" alt="hexo-v"></p>
 <p>初始化命令：hexo init ，初始化完成之后打开所在的文件夹可以看到以下文件：</p>
-<p>myblog</p>
-<p>解释一下：<br>node_modules：是依赖包<br>public：存放的是生成的页面<br>scaffolds：命令生成文章等的模板<br>source：用命令创建的各种文章<br>themes：主题<br>_config.yml：整个博客的配置<br>db.json：source解析所得到的<br>package.json：项目所需模块项目的配置信息<br>做好这些前置工作之后接下来的就是各种配配配置了。</p>
+<p><img src="/.online//hexo-init.png" alt="hexo-init"></p>
+<p>解释一下：</p>
+<ul>
+<li>node_modules：是依赖包</li>
+<li>public：存放的是生成的页面</li>
+<li>scaffolds：命令生成文章等的模板</li>
+<li>source：用命令创建的各种文章</li>
+<li>themes：主题</li>
+<li>_config.yml：整个博客的配置</li>
+<li>db.json：source解析所得到的</li>
+<li>package.json：项目所需模块项目的配置信息<br>做好这些前置工作之后接下来的就是各种配配配置了。</li>
+</ul>
 <ol start="4">
-<li>搭桥到github<br>没账号的创建账号，有账号的看下面。<br>创建一个repo，名称为yourname.github.io, 其中yourname是你的github名称，按照这个规则创建才有用哦，如下：<br>new-repo<br>create-repo</li>
+<li>搭桥到github</li>
 </ol>
-<p>回到gitbash中，配置github账户信息（YourName和YourEail都替换成你自己的）：<br>username<br>email</p>
-<p>创建SSH<br>在gitbash中输入：ssh-keygen -t rsa -C “<a href="mailto:youremail@example.com">youremail@example.com</a>，生成ssh。然后按下图的方式找到id_rsa.pub文件的内容。<br>ssh-key</p>
-<p>将上面获取的ssh放到github中：<br>settings<br>ssh-key<br>添加一个 New SSH key ，title随便取，key就填刚刚那一段。</p>
-<p>在gitbash中验证是否添加成功：ssh -T <a href="mailto:git@github.com">git@github.com</a></p>
-<p>完成下一步你就成功啦！</p>
+<p>没账号的创建账号，有账号的看下面。</p>
+<ul>
+<li>创建一个repo，名称为 <code>yourname.github.io</code>, 其中yourname是你的github名称，按照这个规则创建才有用哦，如下：</li>
+</ul>
+<p><img src="/.online//new-repo.png" alt="new-repo"><br><img src="/.online//create-repo.png" alt="create-repo"></p>
+<ul>
+<li>回到gitbash中，配置github账户信息（YourName和YourEail都替换成你自己的）：</li>
+</ul>
+<p><img src="/.online//username.png" alt="username"><br><img src="/.online//email.png" alt="email"></p>
+<ul>
+<li>创建SSH</li>
+</ul>
+<p>在gitbash中输入：<code>ssh-keygen -t rsa -C &quot;youremail@example.com</code>，生成ssh。然后按下图的方式找到<code>id_rsa.pub</code>文件的内容。</p>
+<p><img src="/.online//ssh-key.png" alt="ssh-key"></p>
+<p>将上面获取的ssh放到github中：</p>
+<p><img src="/.online//settings.png" alt="settings"><br><img src="/.online//ssh-key.png" alt="ssh-key"></p>
+<p>添加一个 New SSH key ，title随便取，key就填刚刚那一段。在gitbash中验证是否添加成功：<code>ssh -T git@github.com</code>完成下一步你就成功啦！</p>
 <ol start="5">
-<li>一步之遥<br>用编辑器打开你的blog项目，修改_config.yml文件的一些配置(冒号之后都是有一个半角空格的)：<br>deploy:<br>type: git<br>repo: <a href="https://github.com/YourgithubName/YourgithubName.github.io.git" target="_blank" rel="noopener">https://github.com/YourgithubName/YourgithubName.github.io.git</a><br>branch: master<br>回到gitbash中，进入你的blog目录，分别执行以下命令：<br>hexo clean<br>hexo generate<br>hexo server<br>注：hexo 3.0把服务器独立成个别模块，需要单独安装：npm i hexo-server。</li>
+<li>一步之遥</li>
 </ol>
-<p>打开浏览器输入：<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></p>
-<p>接着你就可以遇见天使的微笑了~</p>
+<p>用编辑器打开你的blog项目，修改<code>_config.yml</code>文件的一些配置(冒号之后都是有一个空格的)：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;YourgithubName&#x2F;YourgithubName.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>回到gitbash中，进入你的blog目录，分别执行以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<p>以上命令等同于</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo s --debug</span><br></pre></td></tr></table></figure>
+<p>注：hexo 3.0把服务器独立成个别模块，需要单独安装：npm i hexo-server。</p>
+<p>打开浏览器输入：<code>http://localhost:4000</code>，成功！</p>
 <ol start="6">
-<li>上传到github<br>先安装一波：npm install hexo-deployer-git –save（这样才能将你写好的文章部署到github服务器上并让别人浏览到）<br>执行命令(建议每次都按照如下步骤部署)：<br>hexo clean<br>hexo generate<br>hexo deploy<br>注意deploy的过程中要输入你的username及passward。如下：</li>
+<li>上传到github<br>先安装一波：<code>npm install hexo-deployer-git --save</code>（这样才能将你写好的文章部署到github服务器上并让别人浏览到）</li>
 </ol>
-<p>deploy</p>
-<p>在浏览器中输入<a href="http://yourgithubname.github.io就可以看到你的个人博客啦，是不是很兴奋！" target="_blank" rel="noopener">http://yourgithubname.github.io就可以看到你的个人博客啦，是不是很兴奋！</a><br>感觉gitbash中东西太多的时候输入clear命令清空。<br>7. 绑定个人域名<br>不想绑定的自行忽略<br>第一步购买域名：随便在哪个网站买一个就好了，小花是在阿里云购买的visugar.com, DNS也是顺道在那买的。<br>第二步添加CNAME：在项目的source文件夹下新建一个名为CNAME的文件，在里面添加你购买的域名，比如我添加的是visugar.com，只能添加一个哦。<br>到DNS中添加一条记录：<br>dns-note<br>其中ip地址为你的github的地址，可在cmd中ping一下就能看到(ping yourname.github.io)：<br>github-ip</p>
+<p>执行命令(建议每次都按照如下步骤部署)：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<p>以上命令等同于</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+<p>在浏览器中输入<code>http://yourgithubname.github.io</code>，成功！</p>
+<ol start="7">
+<li>绑定个人域名(不想绑定的自行忽略)</li>
+</ol>
+<ul>
+<li>第一步购买域名</li>
+<li>第二步添加CNAME：在项目的source文件夹下新建一个名为CNAME的文件，在里面添加你购买的域名，比如我添加的是lixiaofei.onlline，只能添加一个。</li>
+<li>到DNS中添加一条记录：其中ip地址为你的github的地址，可在cmd中ping一下就能看到(ping yourname.github.io)：</li>
+</ul>
+<p><img src="/.online//dns-note.png" alt="dns-note"><br><img src="/.online//github-ip.png" alt="github-ip"></p>
 
         </div>
         <footer class="article-footer">
@@ -263,7 +296,7 @@
 
 
 
-    <a data-url="http://lixiaofei.online/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/" data-id="ck7zy93en00006cjr6zqp0fba" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://lixiaofei.online/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/" data-id="ck7zzlrpx0001dsjr3n5671sb" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -349,10 +382,6 @@
 部署项目
 上传到github
 绑定个人域名
-修改及配置主题
-添加RSS
-添加评论
-写文章部分
 
 
 
@@ -361,14 +390,14 @@
 
 下载地址
 安装步骤：exe文件，一路next
-安装好后，工作目录右键打开gitbash，查看版本1git version
+安装好后，工作目录右键打开gitbash，查看版本git version
 
 
 
 安装NodeJs 
 
-Hexo是基于nodeJS环境的静态",
-        "wordCount": 101
+Hexo是基于nodeJS环境的静态博客，里面的npm工具很有用啊，所以还是老老实实把这",
+        "wordCount": 150
     }
 </script>
 
