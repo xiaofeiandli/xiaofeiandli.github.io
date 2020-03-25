@@ -19,12 +19,12 @@
 <meta property="og:site_name" content="在阳光下飞翔">
 <meta property="og:description" content="安装Git Bash 安装NodeJs 安装hexo 生成SSH并添加到github 部署项目 上传到github 绑定个人域名    安装Git Bash   下载地址 安装步骤：exe文件，一路next 安装好后，工作目录右键打开gitbash，查看版本git version    安装NodeJs   Hexo是基于nodeJS环境的静态博客，里面的npm工具很有用啊，所以还是老老实实把这">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://lixiaofei.online/.online//gitversion.png">
+<meta property="og:image" content="http://lixiaofei.online/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/gitversion.png">
 <meta property="article:published_time" content="2020-03-20T08:29:36.000Z">
 <meta property="article:modified_time" content="2020-03-20T09:27:23.703Z">
 <meta property="article:author" content="XiaofeiLee">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://lixiaofei.online/.online//gitversion.png">
+<meta name="twitter:image" content="http://lixiaofei.online/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/gitversion.png">
     
 
     
@@ -211,14 +211,14 @@
 <li>安装步骤：exe文件，一路next</li>
 <li>安装好后，工作目录右键打开gitbash，查看版本<code>git version</code></li>
 </ul>
-<p><img src="/.online//gitversion.png" alt="get version"></p>
+<p><img src="/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/gitversion.png" alt="get version"></p>
 <ol start="2">
 <li>安装NodeJs </li>
 </ol>
 <p>Hexo是基于nodeJS环境的静态博客，里面的npm工具很有用啊，所以还是老老实实把这玩意儿装了吧</p>
 <p><a href https: nodejs.org en "">下载地址</a>(说明：LTS为长期支持版，Current为当前最新版)</p>
 <p>安装步骤：反正下载好msi文件后，双击打开安装，也是一路next，不过在Custom Setup这一步记得选 Add to PATH ,这样你就不用自己去配置电脑上环境变量了，装完在按 win + r 快捷键调出运行，然后输入cmd确定，在cmd中输入path可以看到你的node是否配置在里面（环境变量），没有的话你就自由发挥吧。查看版本：<code>node -v</code></p>
-<p><img src="/.online//node-v.png" alt="node-v"></p>
+<p><img src="/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/node-v.png" alt="node-v"></p>
 <ol start="3">
 <li>安装hexo</li>
 </ol>
@@ -227,9 +227,9 @@
 </ul>
 <p>先创工作目录下的文件夹myblog，然后cd到该文件夹下。安装hexo命令：<code>npm i -g hexo</code></p>
 <p>安装完成后，查看版本：</p>
-<p><img src="/.online//hexo-v.png" alt="hexo-v"></p>
+<p><img src="/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/hexo-v.png" alt="hexo-v"></p>
 <p>初始化命令：hexo init ，初始化完成之后打开所在的文件夹可以看到以下文件：</p>
-<p><img src="/.online//hexo-init.png" alt="hexo-init"></p>
+<p><img src="/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/hexo-init.png" alt="hexo-init"></p>
 <p>解释一下：</p>
 <ul>
 <li>node_modules：是依赖包</li>
@@ -248,18 +248,18 @@
 <ul>
 <li>创建一个repo，名称为 <code>yourname.github.io</code>, 其中yourname是你的github名称，按照这个规则创建才有用哦，如下：</li>
 </ul>
-<p><img src="/.online//new-repo.png" alt="new-repo"><br><img src="/.online//create-repo.png" alt="create-repo"></p>
+<p><img src="/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/new-repo.png" alt="new-repo"><br><img src="/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/create-repo.png" alt="create-repo"></p>
 <ul>
 <li>回到gitbash中，配置github账户信息（YourName和YourEail都替换成你自己的）：</li>
 </ul>
-<p><img src="/.online//username.png" alt="username"><br><img src="/.online//email.png" alt="email"></p>
+<p><img src="/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/username.png" alt="username"><br><img src="/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/email.png" alt="email"></p>
 <ul>
 <li>创建SSH</li>
 </ul>
 <p>在gitbash中输入：<code>ssh-keygen -t rsa -C &quot;youremail@example.com</code>，生成ssh。然后按下图的方式找到<code>id_rsa.pub</code>文件的内容。</p>
-<p><img src="/.online//ssh-key.png" alt="ssh-key"></p>
+<p><img src="/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/ssh-key.png" alt="ssh-key"></p>
 <p>将上面获取的ssh放到github中：</p>
-<p><img src="/.online//settings.png" alt="settings"><br><img src="/.online//ssh-key.png" alt="ssh-key"></p>
+<p><img src="/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/settings.png" alt="settings"><br><img src="/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/ssh-key.png" alt="ssh-key"></p>
 <p>添加一个 New SSH key ，title随便取，key就填刚刚那一段。在gitbash中验证是否添加成功：<code>ssh -T git@github.com</code>完成下一步你就成功啦！</p>
 <ol start="5">
 <li>一步之遥</li>
@@ -288,7 +288,7 @@
 <li>第二步添加CNAME：在项目的source文件夹下新建一个名为CNAME的文件，在里面添加你购买的域名，比如我添加的是lixiaofei.onlline，只能添加一个。</li>
 <li>到DNS中添加一条记录：其中ip地址为你的github的地址，可在cmd中ping一下就能看到(ping yourname.github.io)：</li>
 </ul>
-<p><img src="/.online//dns-note.png" alt="dns-note"><br><img src="/.online//github-ip.png" alt="github-ip"></p>
+<p><img src="/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/dns-note.png" alt="dns-note"><br><img src="/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/github-ip.png" alt="github-ip"></p>
 
         </div>
         <footer class="article-footer">
@@ -296,7 +296,7 @@
 
 
 
-    <a data-url="http://lixiaofei.online/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/" data-id="ck86mj5ef00004sjrc69s2xdg" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://lixiaofei.online/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/" data-id="ck86onden0001j4jracx97t32" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -367,7 +367,7 @@
             "name": "XiaofeiLee"
         },
         "headline": "hexo完整搭建过程记录",
-        "image": "http://lixiaofei.online/.online//gitversion.png",
+        "image": "http://lixiaofei.online/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/gitversion.png",
         "keywords": "",
         "genre": "",
         "datePublished": "2020-03-20",
@@ -504,7 +504,7 @@ Hexo是基于nodeJS环境的静态博客，里面的npm工具很有用啊，所�
                             <a href="/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/" class="thumbnail">
     
     
-        <span style="background-image:url(/.online//gitversion.png)" alt="hexo完整搭建过程记录" class="thumbnail-image"></span>
+        <span style="background-image:url(/2020/03/20/hexo%E5%AE%8C%E6%95%B4%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/gitversion.png)" alt="hexo完整搭建过程记录" class="thumbnail-image"></span>
     
     
 </a>
